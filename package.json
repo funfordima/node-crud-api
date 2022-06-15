@@ -1,0 +1,25 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "nodejs api crud rsschool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funfordima/node-crud-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "crud",
+    "api"
+  ],
+  "author": "Dima Litvinov <d.g.litvinov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/funfordima/node-crud-api/issues"
+  },
+  "homepage": "https://github.com/funfordima/node-crud-api#readme"
+}
