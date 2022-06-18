@@ -7,10 +7,10 @@
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "watch": "nodemon --watch ./src/",
-    "lint": "eslint  ./src/",
-    "lint:fix": "eslint  ./src/ --fix",
+    "lint": "eslint ./src/",
+    "lint:fix": "eslint ./src/ --fix",
     "build": "webpack",
-    "start:dev": "cross-env NODE_ENV=development webpack",
+    "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts",
     "run:dev": "cross-env NODE_ENV=development nodemon dist/index.js",
     "run:watch": "cross-env NODE_ENV=development nodemon --watch ./src/"
   },

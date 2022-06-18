@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import nodeExternals from 'webpack-node-externals';
@@ -39,4 +41,4 @@ export default {
   },
   externals: [nodeExternals()],
   watch: NODE_ENV === 'development',
-}
+};

@@ -1,7 +1,16 @@
 import 'dotenv/config';
+import { Application } from './framework/application.js';
+import userRouter from './routes/user-router.js';
+import { jsonParser } from './utils/parse-json.util.js';
+import { parseUrl } from './utils/parse-url.util.js';
 
-console.log(process.env.PORT);
+const PORT = process.env.PORT || 5000;
 
-const add = (a: number, b: number) => a + b;
+const app = new Application();
 
-add(1, 4);
+app.use(jsonParser);
+app.use(parseUrl(`http://localhost:${PORT}`));
+
+app.addRouter(userRouter);
+
+app.listen(PORT, () => console.warn(`Server started on port ${PORT}`));
