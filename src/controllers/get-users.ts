@@ -37,6 +37,10 @@ export const getUsers = (users: User[]) => (req: CustomClientRequest, res: Custo
       // eslint-disable-next-line
       'Content-type': 'application/json'
     });
+    res.writeHead(200, {
+      // eslint-disable-next-line
+      'Process-id': process.pid
+    });
     res.send(users);
   } catch (err) {
     handleServerError(res, err);

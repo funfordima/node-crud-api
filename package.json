@@ -13,7 +13,8 @@
     "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts",
     "run:dev": "cross-env NODE_ENV=development nodemon dist/index.js",
     "run:watch": "cross-env NODE_ENV=development nodemon --watch ./src/",
-    "test": "npx jest"
+    "test": "npx jest",
+    "start:multi": "ts-node ./src/framework/cluster.ts"
   },
   "repository": {
     "type": "git",
